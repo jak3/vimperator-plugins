@@ -122,6 +122,14 @@ function NoscriptVimperator() {
       noscriptOverlay.toggleCurrentPage(3);
     },
 
+    allowpagetemp: function(){
+      noscriptOverlay.allowPage();
+    },
+
+    allowpage: function(){
+      noscriptOverlay.allowPage(true);
+    },
+
     toggleperm: function(){
       const ns = noscriptOverlay.ns;
       const url = ns.getQuickSite(content.document.documentURI, /*level*/ 3);
